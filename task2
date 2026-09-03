@@ -1,0 +1,35 @@
+import java.util.Scanner; 
+public class inputtask1 {
+
+    public static void main(String[] args) throws Exception {
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Please, give the value of the first number:");
+        int number1 = Integer.parseInt(in.nextLine());
+        System.out.println("Please, give the value of the second number:");
+        int number2 = Integer.parseInt(in.nextLine());
+
+        int sum = (number1 + number2);
+        int substraction = (number1 - number2);
+
+        System.out.println("Would you like to calculate the sum or the substraction? Please type plus or minus.");
+        String calculation = in.nextLine();
+
+        if (calculation.equals("plus"))
+        {
+            if (sum > 10)
+            {
+                System.out.println("The value is greater than 10. It is " + sum + ".");
+            }
+            else
+            {
+                System.out.println("The result is " + sum);
+            }
+        }
+        if (calculation.equals("minus"))
+        {
+            System.out.println("The result is " + substraction);
+        }
+    }
+}
