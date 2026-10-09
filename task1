@@ -1,6 +1,10 @@
+import java.util.Scanner;
+
 public class task1 {
     public static void main(String[] args) throws Exception {
-        int age = 100;
+        Scanner in = new Scanner(System.in);
+
+        int age = Integer.parseInt(in.nextLine());
 
                   if (age > 0 && age < 18) 
             { 
