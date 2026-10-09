@@ -1,9 +1,15 @@
+import java.util.Scanner;
+
 public class exercise1 {
     public static void main(String[] args) throws Exception {
+        Scanner in = new Scanner(System.in);
 
-        String creator = "Kinga";
-        int number1 = 6;
-        int number2 = 8;
+        System.out.println("Name?");
+        String creator = in.nextLine();
+        System.out.println("Numbers?");
+        int number1 = Integer.parseInt(in.nextLine());
+        int number2 = Integer.parseInt(in.nextLine());
+        
         int multiplication = (number1 * number2);
         int addition = (number1 + number2);
         int substraction = (number1 - number2);
