@@ -12,8 +12,9 @@ public class inputtask1 {
 
         int sum = (number1 + number2);
         int substraction = (number1 - number2);
+        int multiplication = (number1 * number2);
 
-        System.out.println("Would you like to calculate the sum or the substraction? Please type plus or minus.");
+        System.out.println("Would you like to calculate the sum, the multiplication or the substraction? Please type plus, star or minus.");
         String calculation = in.nextLine();
 
         if (calculation.equals("plus"))
@@ -30,6 +31,10 @@ public class inputtask1 {
         if (calculation.equals("minus"))
         {
             System.out.println("The result is " + substraction);
+        }
+        if (calculation.equals("star"))
+        {
+            System.out.println("The result is " + multiplication);
         }
     }
 }
